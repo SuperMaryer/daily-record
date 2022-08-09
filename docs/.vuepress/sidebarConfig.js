@@ -29,7 +29,29 @@ let sidebar = [
       '/notes/breadth/jsBridge',
     ],
     initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  },
+  {
+    title: '技术栈',
+    children: [
+      '/techStack/overview',
+    ],
+    sidebarDepth: 1,    // 可选的, 默认值是 1
+    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  },
+  {
+    title: 'markdown 使用',
+    children: [
+      '/markdown/title',
+      '/markdown/paragraph',
+      '/markdown/list',
+      '/markdown/block',
+      '/markdown/code',
+      '/markdown/link',
+      '/markdown/picture',
+      '/markdown/table',
+      '/markdown/advancedUsage',
+      '/markdown/keyboardShortcuts',
+    ],
   }
 ]
-
 module.exports = sidebar;
