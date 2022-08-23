@@ -34,8 +34,14 @@ git clone <url> <name>
 - url: Git 仓库
 - name: 自定义本地仓库的名字, 不写默认同步Git仓库的名称
 
+
 `示例：`
 ``` md
 git clone git://github.com/schacon/grit.git mygrit
 ```
 执行命令后, 会把远程仓库克隆到本地, 且自定义目录名称为mygrit。
+
+
+::: details 克隆仓库使用示例
+<img :src="$withBase('/assets/git-images/init-clone.png')" alt="克隆仓库示例">
+:::
