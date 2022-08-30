@@ -39,6 +39,19 @@ let sidebar = [
     initialOpenGroupIndex: -1 // 可选的, 默认值是 0
   },
   {
+    title: '图表可视化',
+    children: [
+      '/charts/intro',
+      '/charts/usage',
+      '/charts/library',
+      '/charts/selection',
+      '/charts/3dCharts',
+      '/charts/wsCharts',
+      '/charts/chartConponent',
+      '/charts/tools',
+    ],
+  },
+  {
     title: 'Markdown',
     children: [
       '/markdown/title',
