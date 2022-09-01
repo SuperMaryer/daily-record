@@ -2,7 +2,7 @@
   "name": "daily-record",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "MIT", 
   "scripts": {
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
