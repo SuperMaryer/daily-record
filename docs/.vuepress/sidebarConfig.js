@@ -13,6 +13,11 @@
 // };
 let sidebar = [
   {
+    title: 'supe-ui',
+    path: '/component/supe-ui',
+    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  },
+  {
     title: '夯实基础',   // 必要的
     path: '/notes/intro',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
     // collapsable: false, // 可选的, 默认值是 true,
@@ -40,10 +45,15 @@ let sidebar = [
   },
   {
     title: '图表可视化',
+    sidebarDepth: 1,    // 可选的, 默认值是 1
+    initialOpenGroupIndex: -1, // 可选的, 默认值是 0
     children: [
       '/charts/intro',
       '/charts/usage',
       '/charts/library',
+      '/charts/library-charts',
+      '/charts/library-d3',
+      '/charts/library-antv',
       '/charts/selection',
       '/charts/3dCharts',
       '/charts/wsCharts',

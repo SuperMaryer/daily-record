@@ -95,3 +95,14 @@ git diff 有两个主要的应用场景：
 
 <img :src="$withBase('/assets/git-images/basic-rm1.png')" alt="删除本地文件示例">
 :::
+
+
+
+#### 实用操作
+1. git 远程分支强制覆盖本地分支--放弃本地修改
+git fetch --all   
+git reset --hard origin/master  
+git pull  
+备注：
+git fetch 只是下载远程的库的内容，不做任何的合并   
+git reset 把HEAD指向刚刚下载的最新的版本
