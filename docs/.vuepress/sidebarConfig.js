@@ -17,32 +17,32 @@ let sidebar = [
     path: '/component/supe-ui',
     initialOpenGroupIndex: -1 // 可选的, 默认值是 0
   },
-  {
-    title: '夯实基础',   // 必要的
-    path: '/notes/intro',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-    // collapsable: false, // 可选的, 默认值是 true,
-    sidebarDepth: 1,    // 可选的, 默认值是 1
-    initialOpenGroupIndex: -1, // 可选的, 默认值是 0
-    children: [
-      '/notes/basic/queryCompare',
-      '/notes/basic/unitCompare',
-    ]
-  },
-  {
-    title: '广度',
-    children: [
-      '/notes/breadth/jsBridge',
-    ],
-    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-  },
-  {
-    title: '技术栈',
-    children: [
-      '/techStack/overview',
-    ],
-    sidebarDepth: 1,    // 可选的, 默认值是 1
-    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-  },
+  // {
+  //   title: '夯实基础',   // 必要的
+  //   path: '/notes/intro',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+  //   // collapsable: false, // 可选的, 默认值是 true,
+  //   sidebarDepth: 1,    // 可选的, 默认值是 1
+  //   initialOpenGroupIndex: -1, // 可选的, 默认值是 0
+  //   children: [
+  //     '/notes/basic/queryCompare',
+  //     '/notes/basic/unitCompare',
+  //   ]
+  // },
+  // {
+  //   title: '广度',
+  //   children: [
+  //     '/notes/breadth/jsBridge',
+  //   ],
+  //   initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  // },
+  // {
+  //   title: '技术栈',
+  //   children: [
+  //     '/techStack/overview',
+  //   ],
+  //   sidebarDepth: 1,    // 可选的, 默认值是 1
+  //   initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  // },
   {
     title: '图表可视化',
     sidebarDepth: 1,    // 可选的, 默认值是 1
@@ -54,11 +54,11 @@ let sidebar = [
       '/charts/library-charts',
       '/charts/library-d3',
       '/charts/library-antv',
-      '/charts/selection',
-      '/charts/3dCharts',
-      '/charts/wsCharts',
-      '/charts/chartConponent',
-      '/charts/tools',
+      // '/charts/selection',
+      // '/charts/3dCharts',
+      // '/charts/wsCharts',
+      // '/charts/chartConponent',
+      // '/charts/tools',
     ],
   },
   {

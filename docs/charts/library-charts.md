@@ -8,6 +8,9 @@ Chart.js 是一种简洁、用户友好的基于图形语法的图表库，同�
 Github：[chart.js github](https://github.com/chartjs/Chart.js)   
 关键词：`基于HTML5`、`Canvas`、`开源`、`体积小`、`兼容性好`、`智能响应式`、`酷炫动画`、`移动端`、`简洁友好`、`好看`、`类型不全`
 
+<img :src="$withBase('/assets/charts-images/library/chartjs-view.png')" alt="chartjs-view" width="700">   
+
+
 两张图：
 
 <img :src="$withBase('/assets/charts-images/library/chartjs-npm.png')" alt="chartjs-npm" width="280" style="margin-right: 20px">
@@ -26,13 +29,16 @@ Github：[chart.js github](https://github.com/chartjs/Chart.js)
 - 图表类型不够全面，仅八种：折线图、柱状图、面积图、雷达图、饼状图、气泡图、散点图和混合图，很难满足多样化的产品图表绘制需求
 
 ### Highcharts
-Highcharts 是一个用纯 JavaScript 编写的一个图表库， 能够很简单便捷的在 Web 网站或是 Web 应用程序添加有交互性的图表，并且免费提供给个人学习、个人网站和非商业用途使用。支持图表定制（收费）
+Highcharts 是一个用纯 JavaScript 编写的一个图表库， 能够很简单便捷的在 Web 网站或是 Web 应用程序添加有交互性的图表，并且免费提供给个人学习、个人网站和非商业用途使用。支持图表定制（收费）。
 
 `官网`：[Highcharts](https://www.Highcharts.com/)   
 `中文文档`：[Highcharts中文](https://www.Highcharts.com.cn/)   
 `Github`：[Highcharts Github](https://github.com/Highcharts/Highcharts)   
 `其他`：[技术社区](https://bbs.hcharts.cn/forum.php) [第三方拓展](https://www.Highcharts.com.cn/implementation) [付费定制](https://Highcharts.com.cn/custom) [在线托管平台](https://jshare.com.cn/new/Highcharts)   
 关键词：`基于HTML5`、`轻量级`、`开源`、`分版本付费`、`兼容性好`、`图表界的jQuery`、`少量3D`、`移动端`
+
+<img :src="$withBase('/assets/charts-images/library/highcharts-view.png')" alt="highcharts-npm" width="700">
+
 
 两张图：
 
@@ -42,7 +48,7 @@ Highcharts 是一个用纯 JavaScript 编写的一个图表库， 能够很简�
 
 特点：
 
-- 挪威HIGHSOFT开发，基于HTML5，开源
+- 挪威HIGHSOFT团队开发，基于HTML5，开源
 - 轻量级的高质量库，无需安装任何插件，不占内存
 - 兼容性好，browser：IE6+、chrome、safari、firefox、opera等现代主流浏览器
 - 完美支持移动端响应式、触摸操作、手势缩放等
@@ -68,6 +74,8 @@ Github：[Echarts Github](https://github.com/chartjs/Echarts)
 社区：[gallery](https://github.com/chartjs/Echarts) [makeapie](https://www.makeapie.com/explore.html) [ppchart](http://www.ppchart.com)   
 关键词：`Canvas`、`Zrender`、`开源`、`纯JS`、`兼容性好`、`智能响应式`、`酷炫动画`、`移动端`、`简洁友好`、`好看`、`类型不全`
 
+<img :src="$withBase('/assets/charts-images/library/echarts-view.png')" alt="echarts-npm" width="700">
+
 两张图：
 
 <img :src="$withBase('/assets/charts-images/library/echarts-npm.png')" alt="echarts-npm" width="280" style="margin-right: 20px">
@@ -88,11 +96,13 @@ Github：[Echarts Github](https://github.com/chartjs/Echarts)
 
 - 体积较大，一个基础的约400K，相对于D3.js和Hightcharts.js来说较大
 - 可定制性差，高度封装，使用时只需配置，出现要绘制配置中不支持的图表，只能尝试使用其他的框架
-- 性能与体验方面，echarts目前还是领先于G2，移动端适配方面antv优于echarts
+- 性能与体验方面，Echarts目前还是领先于G2，移动端适配方面antv优于echarts
 - 复杂关系型图表比较难定制、高度灵活多样化的可视需求面前，需要另寻出路
 
-### vue-echarts
+<!-- ### vue-echarts
 基于 Vue的Echarts 组件，只需要统一提供一种对前后端都友好的数据格式设置简单的配置项，便可轻松生成常见的图表。
+
+
 
 `官网`：[vue-echarts](https://vue-echarts.github.io/)    
 `Github`：[vue-echarts Github](https://github.com/ecomfe/vue-echarts)   
@@ -134,7 +144,7 @@ v-charts是由饿了么团队开发的echarts组件库，适用于不需要大�
 - 统一的数据格式：使用对前后端都友好的数据格式，方便生成和修改
 - 简化的配置项：通过简化的配置项，可以轻松实现复杂需求
 - 定制简单：提供多种自定义 Echarts 方式，可以方便的设置图表配置项
-- 有一定的学习成本
+- 有一定的学习成本 -->
 
 <!-- ### VChart
 https://www.wenjiangs.com/doc/vux-v-chart -->

@@ -10,6 +10,10 @@ D3更像是框架而不是库。它可能很难使用，但有很多有用的资
 `基于D3的一些库`: [Plotly.js](https://plot.ly/export/) [taucharts](https://taucharts.com/)  
 关键词：`灵活`、`SVG绘制`、`开源`、`JS`、`更底层`、`更自由`、`运行快`、`免费`、`学习门槛较高`、`开发成本较高`
 
+
+<img :src="$withBase('/assets/charts-images/library/d3-view.png')" alt="d3-view" width="700">
+
+
 两张图：
 
 <img :src="$withBase('/assets/charts-images/library/d3-npm.png')" alt="d3-npm" width="280" style="margin-right: 20px">
@@ -44,6 +48,10 @@ C3.js 是一个基于 D3.js 的可重用的开源 JS 图表库。这意味着将
 `其他链接`：[demo](https://www.c3js.cn/examples.html) [Mike Bostock 的示例](https://bl.ocks.org/mbostock?_blank) [D3图表](https://observablehq.com/@d3/charts?collection=@d3/charts)   
 关键词：`基于D3`、`开源`、`免费`、`JS`、`自在`、`可订制`、`可控的`、`更自由`、`上手较难`、`可重用`  
 
+
+<img :src="$withBase('/assets/charts-images/library/c3-view.png')" alt="c3-view" width="700">
+
+
 两张图：
 
 <img :src="$withBase('/assets/charts-images/library/c3-npm.png')" alt="c3-npm" width="280" style="margin-right: 20px">
@@ -62,10 +70,14 @@ C3.js 是一个基于 D3.js 的可重用的开源 JS 图表库。这意味着将
 ### NVD3
 NVD3 是一个旨在建立可复用的图表和组件的 d3.js 项目 —— 它提供了同样强大的功能，但更容易使用。它可以让你处理复杂的数据集来创建更高级的可视化。NVD3 允许用户在 Web 应用程序中创建美观的、可复用的图表。
 
-`官网`：[NVD3](https://www.c3js.cn/)    
+`官网`：[NVD3](https://nvd3.org/)    
 `Github`：[NVD3 Github](https://github.com/novus/nvd3)
 `其他链接`：[demo](https://nvd3.org/examples/index.html) 
 关键词：`基于D3`、`开源`、`免费`、`JS`、`可复用`、`美观`、`简洁`、`更自由`、`上手较难`、`可重用`
+
+
+<img :src="$withBase('/assets/charts-images/library/nvd3-view.png')" alt="nvd3-view" width="700">
+
 
 两张图：
 
@@ -90,6 +102,10 @@ Recharts 是基于 React 的组合式图表库，用于使用解耦、可重用�
 `Github`：[Recharts Github](https://github.com/recharts/recharts)
 `其他链接`：[示例](https://recharts.org/zh-CN/examples) 
 关键词：`基于D3`、`开源`、`免费`、`组合`、`可靠`、`解耦`、`可重用`、`组件化`、`react`
+
+
+<img :src="$withBase('/assets/charts-images/library/recharts-view.png')" alt="recharts-view" width="700">
+
 
 两张图：
 

@@ -77,7 +77,7 @@ Github：[Echarts Github](https://github.com/chartjs/Echarts)
 `Github`：[BizGoblin Github](https://github.com/alibaba/BizGoblin)
 `其他链接`：[gallery](https://bizcharts.taobao.com/product/bizgoblin/gallery) 
 
-#### vue-echarts
+<!-- #### vue-echarts
 `官网`：[vue-echarts](https://vue-echarts.github.io/)    
 `Github`：[vue-echarts Github](https://github.com/ecomfe/vue-echarts)   
 `文档`：[vue-echarts 文档](https://github.com/ecomfe/vue-echarts/blob/main/README.zh-Hans.md)   
@@ -86,7 +86,7 @@ Github：[Echarts Github](https://github.com/chartjs/Echarts)
 `官网`：[v-charts](https://v-charts.js.org/#/)    
 `Github`：[v-charts Github](https://github.com/ElemeFE/v-charts)   
 `文档`：[v-charts 文档](https://vue-echarts.github.io/guide/line.html)   
-`其他`：[在线示例](https://codesandbox.io/s/z69myovqzx)   
+`其他`：[在线示例](https://codesandbox.io/s/z69myovqzx)    -->
 
 <!-- ### VChart
 https://www.wenjiangs.com/doc/vux-v-chart -->
