@@ -54,7 +54,7 @@ let sidebar = [
       '/charts/library-charts',
       '/charts/library-d3',
       '/charts/library-antv',
-      // '/charts/selection',
+      '/charts/selection',
       // '/charts/3dCharts',
       // '/charts/wsCharts',
       // '/charts/chartConponent',

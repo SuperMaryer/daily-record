@@ -1,10 +1,4 @@
 ### 图表库
-#### Chart.js
-关键词：`基于HTML5`、`canvas`、`开源`、`体积小`、`兼容性好`、`智能响应式`、`酷炫动画`、`移动端`、`简洁友好`、`好看`、`类型不全`
-
-官网：[chart.js](https://www.chartjs.org/)   
-中文文档：[chart.js中文](https://chartjs.bootcss.com/)   
-Github：[chart.js github](https://github.com/chartjs/Chart.js)   
 
 #### Echarts
 关键词：`Canvas`、`Zrender`、`开源`、`纯JS`、`兼容性好`、`智能响应式`、`酷炫动画`、`移动端`、`简洁友好`、`好看`、`类型不全`
@@ -12,6 +6,12 @@ Github：[chart.js github](https://github.com/chartjs/Chart.js)
 官网：[Echarts](https://echarts.apache.org/zh/index.html)    
 Github：[Echarts Github](https://github.com/chartjs/Echarts)   
 社区：[gallery](https://github.com/chartjs/Echarts) [makeapie](https://www.makeapie.com/explore.html) [ppchart](http://www.ppchart.com)   
+#### Chart.js
+关键词：`基于HTML5`、`canvas`、`开源`、`体积小`、`兼容性好`、`智能响应式`、`酷炫动画`、`移动端`、`简洁友好`、`好看`、`类型不全`
+
+官网：[chart.js](https://www.chartjs.org/)   
+中文文档：[chart.js中文](https://chartjs.bootcss.com/)   
+Github：[chart.js github](https://github.com/chartjs/Chart.js)   
 
 #### Highcharts
 关键词：`基于HTML5`、`轻量级`、`开源`、`分版本付费`、`兼容性好`、`图表界的jQuery`、`少量3D`、`移动端`

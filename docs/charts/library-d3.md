@@ -1,7 +1,7 @@
 ## D3
-D3js是一个可以基于数据来操作文档的JvaScript库。可以帮助你使用 HTML, CSS, SVG 以及 Canvas 来展示数据。D3 遵循现有的 Web 标准，可以不需要其他任何框架独立运行在现代浏览器中，它结合强大的可视化组件来驱动 DOM 操作。  
+D3js是一个可以基于数据来操作文档的JvaScript库，可以帮助你使用HTML、CSS、SVG以及Canvas来展示数据。D3遵循现有的Web标准，可以不需要其他任何框架独立运行在现代浏览器中，它结合强大的可视化组件来驱动DOM操作。  
 
-D3更像是框架而不是库。它可能很难使用，但有很多有用的资源可供使用。而且，最后，您可以从头开始获得任何类型的可视化和图形，使D3完全值得。
+D3更像是框架而不是库。它可能很难使用，但有很多有用的资源可供使用，可以从头开始获得任何类型的可视化和图形，使D3完全值得。
 
 `官网`：[D3](https://d3js.org/)   
 `中文手册`：[D3中文手册](https://github.com/tianxuzhang/d3.v4-API-Translation)   
@@ -23,15 +23,14 @@ D3更像是框架而不是库。它可能很难使用，但有很多有用的资
 特点：
 
 - 基于web标准的JS可视化库、基于集合概念的DOM操作库、开源、免费
-- 兼容性: browser：IE9+、chrome、safari、firefox、opera等现代主流浏览器
-- SVG绘制图形，强大的操作能力，容易将数据映射为SVG属性，被很多其他的图表插件所使用
-- 运行速度很快，尤其适合大数据量的展示和交互式动态效果的渲染
-- 灵活、封装度低，可自定义事件、更底层、更自由
+- 兼容性: IE9+、chrome、safari、firefox、opera等现代主流浏览器
+- SVG绘制图形：强大的操作能力，容易将数据映射为SVG属性，被很多其他的图表插件所使用
+- 运行速度很快：尤其适合大数据量的展示和交互式动态效果的渲染
+- 自定义扩展灵活：封装度低，可自定义事件、更底层、更自由
 - 强大的社区、丰富的demo、集成大量数据处理、布局算法和计算图形的工具方法
+- 较高的学习门槛：API太底层，复用性低
+- 开发成本也比较高：基本所有功能图表都要自己手动绘图实现
 
-
-- 较高的学习门槛，API太底层，复用性低
-- 开发成本也比较高，基本所有功能图表都要自己手动绘图实现
 
 D3没有提供封装好的组件，在复用性、易用性方面不佳，社区里有很多基于D3的可视化组件库：
 
@@ -60,15 +59,15 @@ C3.js 是一个基于 D3.js 的可重用的开源 JS 图表库。这意味着将
 
 特点：
 
-- 基于 D3.js的JS图表库，使生成基于D3的图表变得容易、开源、免费
-- 充分可定制性和控制性，支持多种图表类型
-- 兼容性：基于D3，C3仅支持D3支持的浏览器，IE9和IE10需要polyfill，因为c3使用 MutationObserver这在这些版本中不受支持
+- 基于D3的JS图表库，使生成基于D3的图表变得容易、开源、免费
+- 自定义扩展：充分可定制性和控制性，支持多种图表类型
+- 兼容性：基于D3，C3仅支持D3支持的浏览器，IE9和IE10需要polyfill，因为c3使用MutationObserver这在这些版本中不受支持
 - 可订制：生成时会为每个元素提供一些类，因此您可以通过该类定义自定义样式，并且可以通过D3直接扩展结构
 - 可控的：3提供了各种API和回调来访问图表状态。通过使用它们，即使在呈现图表之后，您也可以对其进行更新
-- 相对而言属于比较难的库
+- 上手较难：相对而言属于比较难的库
 
 ### NVD3
-NVD3 是一个旨在建立可复用的图表和组件的 d3.js 项目 —— 它提供了同样强大的功能，但更容易使用。它可以让你处理复杂的数据集来创建更高级的可视化。NVD3 允许用户在 Web 应用程序中创建美观的、可复用的图表。
+NVD3是一个旨在建立可复用的图表和组件的D3.js项目，它提供了同样强大的功能，但更容易使用。它可以让你处理复杂的数据集来创建更高级的可视化。NVD3允许用户在Web应用程序中创建美观的、可复用的图表。
 
 `官网`：[NVD3](https://nvd3.org/)    
 `Github`：[NVD3 Github](https://github.com/novus/nvd3)
@@ -90,13 +89,86 @@ NVD3 是一个旨在建立可复用的图表和组件的 d3.js 项目 —— 它
 - Mike Bostock撰写、基于D3的JS库、开源、免费
 - 使生成基于D3的图表变得容易
 - 兼容性：在基于WebKit的浏览器上运行最好，IE10+、chrome最新版、Opera 15+、Safari最新版、firefox最新版
-- 允许用户在 Web 应用程序中创建美观的、可复用的图表
-- NVD3 具有很强大的图表功能，能够很方便的创建箱形图、旭日形和烛台图等
-- 图表库的速度有时可能会成为一个问题，与Fastdom安装配合使用，速度会更快
-- 这个库可以说是D3和C3的中间层，它封装了一部分D3底层数据操作从而提供了更简单的图标生存interface，但是在实现图标上更多操作时其实还是在和D3直接交流，实现困难
+- 强大的图表功能：能够很方便的创建箱形图、旭日形和烛台图等
+- 性能一般：有时可能会成为一个问题，与Fastdom安装配合使用速度会更快
+- D3和C3的中间层：它封装了一部分D3底层数据操作从而提供了更简单的图标生存interface
+- 上手较难：在实现图表上更多操作时其实还是在和D3直接交流，实现较难
+
+::: details 展开查看使用示例
+代码：
+``` js
+nv.addGraph(function() {
+  var chart = nv.models.lineChart()
+                .margin({left: 100})  //Adjust chart margins to give the x-axis some breathing room.
+                .useInteractiveGuideline(true)  //We want nice looking tooltips and a guideline!
+                .transitionDuration(350)  //how fast do you want the lines to transition?
+                .showLegend(true)       //Show the legend, allowing users to turn on/off line series.
+                .showYAxis(true)        //Show the y-axis
+                .showXAxis(true);        //Show the x-axis
+  
+
+  chart.xAxis     //Chart x-axis settings
+      .axisLabel('Time (ms)')
+      .tickFormat(d3.format(',r'));
+
+  chart.yAxis     //Chart y-axis settings
+      .axisLabel('Voltage (v)')
+      .tickFormat(d3.format('.02f'));
+
+  /* Done setting the chart up? Time to render it!*/
+  var myData = sinAndCos();   //You need data...
+
+  d3.select('#chart svg')    //Select the <svg> element you want to render the chart in.   
+      .datum(myData)         //Populate the <svg> element with chart data...
+      .call(chart);          //Finally, render the chart!
+
+  //Update the chart when window resizes.
+  nv.utils.windowResize(function() { chart.update() });
+  return chart;
+});
+/**************************************
+ * Simple test data generator
+ */
+function sinAndCos() {
+  var sin = [],sin2 = [],
+      cos = [];
+
+  //Data is represented as an array of {x,y} pairs.
+  for (var i = 0; i < 100; i++) {
+    sin.push({x: i, y: Math.sin(i/10)});
+    sin2.push({x: i, y: Math.sin(i/10) *0.25 + 0.5});
+    cos.push({x: i, y: .5 * Math.cos(i/10)});
+  }
+
+  //Line chart data should be sent as an array of series objects.
+  return [
+    {
+      values: sin,      //values - represents the array of {x,y} data points
+      key: 'Sine Wave', //key  - the name of the series.
+      color: '#ff7f0e'  //color - optional: choose your own line color.
+    },
+    {
+      values: cos,
+      key: 'Cosine Wave',
+      color: '#2ca02c'
+    },
+    {
+      values: sin2,
+      key: 'Another sine wave',
+      color: '#7777ff',
+      area: true      //area - set to true if you want this line to turn into a filled area chart.
+    }
+  ];
+}
+```
+   
+效果：  
+    <img :src="$withBase('/assets/charts-images/library/nvd3-charts.png')" alt="nvd3-charts" width="700" >
+:::
+
 
 ### Recharts
-Recharts 是基于 React 的组合式图表库，用于使用解耦、可重用的 React 组件构建图表，它建立在 SVG 元素和 D3.js 之上。
+Recharts是基于React的组合式图表库，用于使用解耦、可重用的React组件构建图表，它建立在SVG元素和D3.js之上。
 
 `官网`：[Recharts](https://recharts.org/en-US/)    
 `Github`：[Recharts Github](https://github.com/recharts/recharts)
@@ -115,10 +187,10 @@ Recharts 是基于 React 的组合式图表库，用于使用解耦、可重用�
 
 特点：
 
-- 简单地使用 React 组件进行部署
-- 支持原生 SVG，轻量级应用一些 D3 子模块
-- 声明式的标签，接口式的 API，图表编写简单
-- 贴近原生 SVG 的配置项，让配置项更加自然
+- 简单地使用React组件进行部署
+- 支持原生SVG，轻量级应用一些D3子模块
+- 声明式的标签，接口式的API，图表编写简单
+- 贴近原生SVG的配置项，让配置项更加自然
 
 ::: details 展开查看使用示例
 装包：   
