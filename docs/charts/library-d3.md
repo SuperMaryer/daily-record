@@ -176,7 +176,7 @@ Recharts是基于React的组合式图表库，用于使用解耦、可重用的R
 关键词：`基于D3`、`开源`、`免费`、`组合`、`可靠`、`解耦`、`可重用`、`组件化`、`react`
 
 
-<img :src="$withBase('/assets/charts-images/library/recharts-view.png')" alt="recharts-view" width="700">
+<img :src="$withBase('/assets/charts-images/library/reCharts-view.png')" alt="reCharts-view" width="700">
 
 
 两张图：
