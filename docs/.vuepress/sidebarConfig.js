@@ -32,8 +32,9 @@ let sidebar = [
       {
         title: '夯实基础',
         children: [
-          '/notes/basic/queryCompare',
-          '/notes/basic/unitCompare',
+          '/notes/basic/Ajax Fetch Axios区别',
+          '/notes/basic/px em rem vw vh区别',
+          '/notes/basic/防抖节流',
         ]
       },
       {
