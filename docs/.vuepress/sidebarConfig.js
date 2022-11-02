@@ -23,6 +23,7 @@ let sidebar = [
     children: [
       '/dailyQuestion/overview',
       '/dailyQuestion/vuex',
+      '/dailyQuestion/NaN',
     ],
   },
   {
