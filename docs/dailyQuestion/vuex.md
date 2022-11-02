@@ -106,3 +106,21 @@ export default{
 :::
 
 3. 插件: 类似的插件有vuex-persist、vuex-persistedstate，内部的实现就是通过订阅mutation变化做统一处理，通过插件的选项控制哪些变量需要持久化
+
+
+### 为什么 Vuex 的 mutation 中不能做异步操作?
+在 mutation 中混合异步调用会导致你的程序很难调试。
+eg：当你调用了两个包含异步回调的 mutation 来改变状态，怎么知道什么时候回调和哪个先回调呢？   
+=》所以我们要区分这两个概念
+=》 在 Vuex 中，状态改变用同步方式实现（mutation）。异步操作都放在actions中。
+
+
+- 区分 actions 和 mutations 并不是为了解决竞态问题，而是为了能用 devtools 追踪状态变化。
+- 事实上在 vuex 里面 actions 只是一个架构性的概念，并不是必须的，说到底只是一个函数，你在里面想干嘛都可以，只要最后触发 mutation 就行。异步竞态怎么处理那是用户自己的事情。
+- vuex 真正限制你的只有 mutation 必须是同步的这一点
+
+同步的意义在于这样每一个 mutation 执行完成后都可以对应到一个新的状态，这样 devtools 就可以打个快照存下来。如果你开着 devtool 调用一个异步的 action，你可以清楚地看到它所调用的 mutation 是何时被记录下来的，并且可以立刻查看它们对应的状态。
+
+
+简言之：
+Vuex 中所有的状态更新的唯一途径都是 mutation，异步操作通过 Action 来提交 mutation 实现，这样可以方便地跟踪每一个状态的变化，从而能够实现一些工具帮助更好地了解应用每个 mutation 执行完成后都会对应到一个新的状态变更，这样 detools 就可以打个快照存下来，可以跟踪到状态修改。如果在 mutation 里异步修改，detools 就追踪不到，给调试带来困难
