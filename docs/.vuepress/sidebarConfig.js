@@ -24,6 +24,7 @@ let sidebar = [
       '/dailyQuestion/overview',
       '/dailyQuestion/vuex',
       '/dailyQuestion/NaN',
+      '/dailyQuestion/常见状态码',
     ],
   },
   {
@@ -226,6 +227,8 @@ let sidebar = [
   {
     title: 'Git',
     children: [
+      '/git/yarn常用指令',
+      '/git/git常用指令',
       '/git/intro',
       '/git/starting',
       '/git/init',
