@@ -18,6 +18,15 @@ let sidebar = [
     path: '/component/supe-ui',
   },
   {
+    title: '框架及webpack',
+    path: '/frame/intro',
+    children: [
+      '/frame/vue/vue',
+      '/frame/react/react',
+      '/frame/webpack/webpack',
+    ],
+  },
+  {
     title: '每日一题',
     path: '/dailyQuestion/intro',
     children: [
@@ -150,12 +159,12 @@ let sidebar = [
           '/notes/project/sourcemap的作用及配置',
           '/notes/project/SPA和MPA应该如何选择',
           '/notes/project/设计一个H5编辑器的数据模型和核心功能',
-          '/notes/project/设计一个"用户-角色-权限"模型"',
+          // '/notes/project/设计一个"用户-角色-权限"模型',
           '/notes/project/Hybrid模板的更新流程',
           '/notes/project/开发一个H5抽奖页需要哪些后端api',
-          '/notes/project/如果你是前端负责人，将如何做技术选型',
+          '/notes/project/如果你是前端负责人,将如何做技术选型',
           '/notes/project/设计实现一个H5图片懒加载SDK',
-          '/notes/project/code review',
+          '/notes/project/code-review',
           '/notes/project/如何学习一门新语言,需要考虑哪些方面',
           '/notes/project/你觉得自己还有哪些不足',
         ],
