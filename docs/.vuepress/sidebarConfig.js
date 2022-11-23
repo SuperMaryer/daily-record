@@ -85,7 +85,7 @@ let sidebar = [
         title: '深度',
         children: [
           '/notes/depth/垃圾回收',
-          '/notes/depth/虚拟DOM(vdom)',
+          '/notes/depth/虚拟DOM',
           '/notes/depth/nodejs如何开启进程及进程如何通讯',
           '/notes/depth/JS Bridge',
           '/notes/depth/requestAnimationFrame和requestIdleCallback区别',
