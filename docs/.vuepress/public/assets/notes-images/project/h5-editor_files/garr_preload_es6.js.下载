@@ -1,0 +1,7 @@
+
+(function (moduleName) {
+  window.garrPreloadConfig = window.garrPreloadConfig || {};
+  window.garrPreloadConfig[moduleName] = {};
+  window.garrPreloadConfig[moduleName].jsList = ["/eesz/bear/docx/module/vendors-docx_entry_stable_es6.3e7b6d4e.chunk.js","/eesz/bear/docx/module/vendors-docx_entry_biz_es6.c1b0b381.chunk.js","/eesz/bear/docx/module/vendors~docx_entry~preview_entry~shortcut_entry_es6.e74c04e5.chunk.js","/eesz/bear/docx/module/vendors~docx_entry_es6.3c5a0c0d.chunk.js","/eesz/bear/docx/module/default~docx_entry~preview_entry~shortcut_entry_es6.cbe78eff.chunk.js","/eesz/bear/docx/module/default~docx_entry~docx_index_delay~preview_entry_es6.8eb488c9.chunk.js","/eesz/bear/docx/module/default~docx_entry~docx_index_delay_es6.09982c03.chunk.js","/eesz/bear/docx/module/docx_entry_es6.cbaf1717.chunk.js"];
+  window.garrPreloadConfig[moduleName].cssList = ["/eesz/bear/docx/module/css/vendors~docx_entry~preview_entry~shortcut_entry.25feebbd.chunk.css","/eesz/bear/docx/module/css/default~docx_entry~preview_entry~shortcut_entry.9a869a09.chunk.css","/eesz/bear/docx/module/css/docx_entry.7e437f0d.chunk.css"];
+})('docx')

@@ -173,6 +173,14 @@ let sidebar = [
         title: '经验之谈',
         children: [
           '/notes/experience/H5页面如何进行 “首屏” 优化',
+          '/notes/experience/后端一次性返回10w条数据，你该如何渲染',
+          '/notes/experience/前端常用的设计模式有哪些？对应的使用场景是什么',
+          '/notes/experience/观察者模式和发布订阅模式区别',
+          '/notes/experience/使用vue遇到过哪些坑',
+          '/notes/experience/实际工作中，做过哪些vue优化',
+          '/notes/experience/实际工作中，做过哪些react优化',
+          '/notes/experience/如何统一监听Vue组件报错',
+          '/notes/experience/如果H5很慢，你该如何排查性能问题',
         ],
       },
       {
