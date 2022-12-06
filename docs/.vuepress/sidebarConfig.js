@@ -34,6 +34,7 @@ let sidebar = [
       '/dailyQuestion/vuex',
       '/dailyQuestion/NaN',
       '/dailyQuestion/常见状态码',
+      '/dailyQuestion/Vue组件写name有什么好处',
     ],
   },
   {
