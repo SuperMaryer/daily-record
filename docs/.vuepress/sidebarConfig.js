@@ -31,10 +31,46 @@ let sidebar = [
     path: '/dailyQuestion/intro',
     children: [
       '/dailyQuestion/overview',
-      '/dailyQuestion/vuex',
-      '/dailyQuestion/NaN',
-      '/dailyQuestion/常见状态码',
-      '/dailyQuestion/Vue组件写name有什么好处',
+      {
+        title: 'js和ts',
+        children: [
+          '/dailyQuestion/js/NaN',
+          '/dailyQuestion/js/for和forEach区别',
+          '/dailyQuestion/js/TS中any和unkown的区别',
+        ]
+      },
+      {
+        title: 'css和html',
+        children: [
+          '/dailyQuestion/css/图标',
+          '/dailyQuestion/css/flex',
+        ]
+      },
+      {
+        title: 'http和浏览器',
+        children: [
+          '/dailyQuestion/http/常见状态码',
+          '/dailyQuestion/http/UDP和TCP区别',
+          '/dailyQuestion/http/cookie和session',
+          '/dailyQuestion/http/localStorage和sessionStorage',
+          '/dailyQuestion/http/关于license开源协议',
+        ]
+      },
+      {
+        title: 'vue',
+        children: [
+          '/dailyQuestion/vue/vuex',
+          '/dailyQuestion/vue/Vue组件写name有什么好处',
+        ]
+      },
+      {
+        title: 'webpack',
+        children: [
+          '/dailyQuestion/webpack/babel',
+          '/dailyQuestion/webpack/webpack重要概念',
+          '/dailyQuestion/webpack/模块化的前世今生',
+        ]
+      },
     ],
   },
   {
@@ -183,22 +219,7 @@ let sidebar = [
           '/notes/experience/如何统一监听Vue组件报错',
           '/notes/experience/如果H5很慢，你该如何排查性能问题',
         ],
-      },
-      {
-        title: '日常积累记录',
-        children: [
-          '/notes/record/图标',
-          '/notes/record/flex',
-          '/notes/record/babel',
-          '/notes/record/webpack entry output mode external loader  plugin 等',
-          '/notes/record/for和forEach区别',
-          '/notes/record/UDP和TCP区别',
-          '/notes/record/cookie和session',
-          '/notes/record/localStorage和sessionStorage',
-          '/notes/record/模块化的前世今生',
-          '/notes/record/关于license开源协议',
-        ],
-      },
+      }
     ]
   },
   {
