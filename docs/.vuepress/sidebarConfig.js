@@ -187,6 +187,7 @@ let sidebar = [
           // 以下为自己刷到的题
           '/notes/algorithm/找出单向链表中倒数 k个节点返回该节点的值',
           '/notes/algorithm/交替合并字符串',
+          '/notes/algorithm/js的几种常用排序方法',
         ],
       },
       {
