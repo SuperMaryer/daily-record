@@ -10,26 +10,28 @@
 
 <body>
     <script>
-        function moveZeroToRight(arr) {
-            const len = arr.length;
-            if (len === 0) return;
+        function format(n) {
+            sArr = n.toString().split('.');
 
-            let i, j = len - 1;
+            const s = sArr[0];
 
-            for (i = 0; i < j; i++) {
-                if (arr[i] === 0) {
-                    arr[i] = arr[j];
-                    arr[j] = 0;
-                    j--;
-                    i--;
+            const arr = s.split('').reverse();
+
+            const left = arr.reduce((pre, cur, index) => {
+                if (index % 3===0 && index !== 0) {
+                    return cur + ',' + pre;
+                } else {
+                    return cur + pre;
                 }
-            }
+            }, '')
+
+            const right = sArr[1];
+            return right ? left + '.' + right : left;
         }
 
         // const arr = [1,3,0,6,0,4,0,2]
-        const arr = [1,3,0,6,0,7,9,0,4,0,0]
-        moveZeroToRight(arr);
-        console.log(arr);
+        const arr = 120345067000.213
+        console.log(format(arr));
     </script>
 </body>
 
