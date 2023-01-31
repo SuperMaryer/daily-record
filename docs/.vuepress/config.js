@@ -20,9 +20,9 @@ module.exports = {
         // require('./my-plugin.js'),
         // ['dynamic-title', {
         //     showIcon: '/logo.png',
-        //     showText: '客官欢迎回来~',
+        //     showText: '欢迎回来~',
         //     hideIcon: '/logo.png',
-        //     hideText: '客官不要走嘛~',
+        //     hideText: '等你回来哦~',
         //     recoverTime: 2000,
         // }]
     ]

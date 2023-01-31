@@ -14,7 +14,7 @@
 
 let sidebar = [
   {
-    title: 'supe-ui',
+    title: 'supe-ui组件库小demo',
     path: '/component/supe-ui',
   },
   {
@@ -37,6 +37,7 @@ let sidebar = [
           '/dailyQuestion/js/NaN',
           '/dailyQuestion/js/for和forEach区别',
           '/dailyQuestion/js/TS中any和unkown的区别',
+          '/dailyQuestion/js/数组sort排序',
         ]
       },
       {
@@ -74,7 +75,7 @@ let sidebar = [
     ],
   },
   {
-    title: '前端100笔记',
+    title: '精选100道面试题',
     path: '/notes/intro',
     children: [
       {
@@ -223,14 +224,14 @@ let sidebar = [
       }
     ]
   },
-  {
-    title: '技术栈',
-    children: [
-      '/techStack/overview',
-    ],
-    sidebarDepth: 1,    // 可选的, 默认值是 1
-    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-  },
+  // {
+  //   title: '技术栈',
+  //   children: [
+  //     '/techStack/overview',
+  //   ],
+  //   sidebarDepth: 1,    // 可选的, 默认值是 1
+  //   initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  // },
   {
     title: '图表可视化',
     sidebarDepth: 1, 
