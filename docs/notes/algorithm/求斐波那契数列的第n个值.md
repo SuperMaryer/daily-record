@@ -19,7 +19,7 @@ f(n) = f(n-2) + f(n-1)
 ### 使用递归
 不建议使用递归，复杂度高，大量的重复计算
 
-<img :src="$withBase('/assets/algorithm/斐波那契递归.png')" alt="斐波那契递归" width="500">
+<img :src="$withBase('/assets/notes-images/algorithm/斐波那契递归.png')" alt="斐波那契递归" width="500">
 
 代码实现：
 
@@ -77,4 +77,4 @@ function fibonacci(n: number): number {
 ### 拓展
 青蛙跳台阶，一次可以跳一级，也可以跳两级，跳到n级台阶又几种方式
 
-<img :src="$withBase('/assets/algorithm/青蛙跳台阶.png')" alt="青蛙跳台阶" width="500">
+<img :src="$withBase('/assets/notes-images/algorithm/青蛙跳台阶.png')" alt="青蛙跳台阶" width="500">

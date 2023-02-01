@@ -14,8 +14,13 @@
 
 let sidebar = [
   {
-    title: 'supe-ui组件库小demo',
-    path: '/component/supe-ui',
+    title: '个人项目集合',
+    path: '/project/intro',
+    children: [
+      '/project/supe-ui',
+      '/project/record-websocket',
+      '/project/html-record',
+    ],
   },
   {
     title: '框架及webpack',
