@@ -76,7 +76,8 @@ let sidebar = [
   },
   {
     title: '精选100道面试题',
-    path: '/notes/intro',
+    // path: '/notes/intro',
+    path: '/notes/basic/Ajax Fetch Axios区别',
     children: [
       {
         title: '夯实基础',
