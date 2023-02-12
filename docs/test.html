@@ -9,6 +9,41 @@
     <link rel="preconnect" href="https:fonts.gstatic.com/" crossorigin="">
 </head>
 <body>
-    
+    <script>
+        function myNew(constructor, ...args) {
+            debugger
+            const obj = {};
+            obj.__proto__ = constructor.prototype;
+            const res = constructor.apply(obj, args);
+            
+            return typeof obj === 'object' && res !== null ? res : obj;
+
+        }
+
+        function create(...args) {
+    const obj = {};
+    const fn = args.shift();
+    obj.__proto__ = fn.prototype;
+    const res = fn.apply(obj, args)
+    return typeof obj === 'object' && res !== null ? res : obj;
+}
+
+class Foo {
+    constructor(name, sex) {
+        debugger
+        this.name = name;
+        this.city = 'shenzhen';
+        this.sex = sex;
+    }
+
+    getName() {
+        return this.name;
+    }
+}
+
+const res = myNew(Array, 1, 2, 3);
+console.log(res);
+
+    </script>
 </body>
 </html>

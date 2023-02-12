@@ -160,7 +160,6 @@ let sidebar = [
         children: [
           '/notes/thought/map(parseInt)',
           '/notes/thought/以下代码输出什么',
-          '/notes/thought/代码执行结果',
           '/notes/thought/arr to tree',
           '/notes/thought/tree to arr ',
           '/notes/thought/promise.then代码题',
