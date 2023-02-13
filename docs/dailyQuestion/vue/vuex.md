@@ -23,6 +23,14 @@ Vuex就是专为Vue.js开发的状态管理工具，用于解决组件之间数�
 - Modules：模块化思想，项目特别复杂的时候，可以让每一个模块拥有自己的State、Mutation、Action、Getter，使得结构非常清晰，方便管理
 
 
+### 简述 Vuex 的数据传递流程
+1. new Vuex.store()创建一个仓库state，存储公共的状态
+2. this.$store.state 或者 getter 获取公共状态，进行页面渲染
+3. 组件需要修改状态时，通过dispatch来派发动作修改状态，进行页面渲染
+4. action会派发commit来触发mutation里面的方法
+5. mutation里面的方法修改state里面的数据
+
+
 ### dispatch与commit区别
 - dispatch：是跟Action一块用的，含有异步操作，例如向后台提交数据。写法：this.$store.dispatch('mutation的方法名'，获取值)
 - commit：是跟Mutation一块用的，同步操作。写法：this.$store.commit('mutation的方法名'，获取值)

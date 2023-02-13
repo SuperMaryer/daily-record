@@ -1,17 +1,17 @@
 
 # arr to tree
 
-### 需求: 手写convert函数，将数组转为树
+### 需求: 手写arrToTree函数，将数组转为树
 
 ``` js 
 // 原有数组
 const arr =[
-    {id: 1, name: '部门A'， parentId：0}，
-    {id: 2, name: '部门B'， parentId：1}，
-    {id: 3, name: '部门C'， parentId：1}，
-    {id: 4, name: '部门D'， parentId：2}，
-    {id: 5, name: '部门E'， parentId：2}，
-    {id: 6, name: '部门F'， parentId：3}，
+    {id: 1, name: '部门A', parentId：0},
+    {id: 2, name: '部门B', parentId：1},
+    {id: 3, name: '部门C', parentId：1},
+    {id: 4, name: '部门D', parentId：2},
+    {id: 5, name: '部门E', parentId：2},
+    {id: 6, name: '部门F', parentId：3}
 ]
 ```
 
@@ -38,23 +38,36 @@ interface treeItem {
     parentId: number
 }
 
+/**
+ * @description 数组转树 
+ * @param arr 数组
+ * @return root 树根节点
+*/
+
 function arrToTree(arr: treeItem[]): treeNode {
     const len = arr.length;
-    let res = [];
-    if (len === 0) return res;
-    let treeNodeMap = new Map()
+    let root = [];
+    if (len === 0) return root;
+
+    let idTreeNodeMap = new Map()
 
     for (let i = 0; i < len; i++) {
-        const cur = arr[i];
-        const curNode = {
-            id: cur.id,
-            name: cur.name
+        const {id, name, parentId} = arr[i];
+        const treeNode = { id, name };
+        idTreeNodeMap.set(id, treeNode);
+
+        // 根据夫id 找到它的children, 加入它
+        const parentNode = idTreeNodeMap.get(parentId);
+        if (parentNode) {
+            if (!parentNode.children) parentNode.children = [];
+
+            parentNode.children.push(treeNode);
         }
-        treeNodeMap.set(cur.id, curNode);
 
-
-        if（cur.parentId === 0） res = curNode;
-
+        // parentId 为 0 时，为根节点，需要记录，返回
+        if (parentId === 0) root = treeNode;
     }
+
+    return root;
 }
 ```

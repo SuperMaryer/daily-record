@@ -9,29 +9,24 @@
 </head>
 
 <body>
+    <div>待补充：
+        nodes-algorithm
+        1. 定义一个JS函数，反转单向链表
+        2. 链表和数组哪个实现队列更快
+        3. 找出单向链表中倒数第 k 个节点返回该节点的值
+        
+        
+        codes
+        1. 函数柯里化curry函数
+        2. 深拷贝函数，考虑Map Set 和循环引用
+        3. 手写LazyMan
+        4. LRU缓存
+
+        breadth
+        1. jsBridge
+    </div>
     <script>
-        function format(n) {
-            sArr = n.toString().split('.');
-
-            const s = sArr[0];
-
-            const arr = s.split('').reverse();
-
-            const left = arr.reduce((pre, cur, index) => {
-                if (index % 3===0 && index !== 0) {
-                    return cur + ',' + pre;
-                } else {
-                    return cur + pre;
-                }
-            }, '')
-
-            const right = sArr[1];
-            return right ? left + '.' + right : left;
-        }
-
-        // const arr = [1,3,0,6,0,4,0,2]
-        const arr = 120345067000.213
-        console.log(format(arr));
+        
     </script>
 </body>
 
