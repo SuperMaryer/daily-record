@@ -238,6 +238,14 @@ let sidebar = [
   //   initialOpenGroupIndex: -1 // 可选的, 默认值是 0
   // },
   {
+    title: '工作中遇到的问题',
+    children: [
+      '/issue/jenkins构建失败找不到包问题',
+    ],
+    sidebarDepth: 1,    // 可选的, 默认值是 1
+    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  },
+  {
     title: '图表可视化',
     sidebarDepth: 1, 
     initialOpenGroupIndex: -1,
