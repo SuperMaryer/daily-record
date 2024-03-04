@@ -1,3 +1,22 @@
+
+# concurrently
+
+### 作用
+- npm script命令同时开启多个监听服务
+- 多个命令并发执行，互补阻塞
+
+### 语法
+``` js
+"start": "concurrently \"arg1 ...\" \"arg2 ...\"",
+```
+
+### concurrently  vs  &&
+- &&: 通过 && 连接的命令，会按顺序执行，一旦有"阻塞"的命令， 后面的命令将会无法执行
+- concurrently：多个命令并发执行，互不阻塞
+
+
+引用当前项目的 package.json 的 scripts   
+``` json
 {
   "name": "daily-record",
   "version": "1.0.0",
@@ -26,3 +45,13 @@
     "vuepress-plugin-auto-sidebar": "^2.3.2"
   }
 }
+```
+
+``` json
+"scripts": {
+  "start": "cross-env NODE_ENV=development vue-cli-service serve",
+  "build": "cross-env NODE_ENV=production vue-cli-service build",
+  "fixlimit": "cross-env LIMIT=8192 increase-memory-limit",
+  "all": "concurrently  \"(npm start --prefix ../smart-road-dg)\"  \"npm start --mode bhw\""
+}
+```

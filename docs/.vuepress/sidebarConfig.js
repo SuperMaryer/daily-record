@@ -29,6 +29,28 @@ let sidebar = [
       '/frame/vue/vue',
       '/frame/react/react',
       '/frame/webpack/webpack',
+      {
+        title: 'vite',
+        path: '/frame/vite/intro',
+        children: [
+          '/frame/vite/intro',
+          '/frame/vite/create',
+          '/frame/vite/css',
+          '/frame/vite/ts',
+          '/frame/vite/静态资源处理',
+          '/frame/vite/环境变量',
+          '/frame/vite/hmr热更新',
+          '/frame/vite/glob',
+          '/frame/vite/预编译',
+        ]
+      },
+      {
+        title: 'canvas',
+        path: '/frame/canvas/intro',
+        children: [
+          '/frame/canvas/实现一个电子签名'
+        ]
+      },
     ],
   },
   {
@@ -50,6 +72,7 @@ let sidebar = [
         children: [
           '/dailyQuestion/css/图标',
           '/dailyQuestion/css/flex',
+          '/dailyQuestion/css/grid',
         ]
       },
       {
@@ -75,8 +98,15 @@ let sidebar = [
           '/dailyQuestion/webpack/babel',
           '/dailyQuestion/webpack/webpack重要概念',
           '/dailyQuestion/webpack/模块化的前世今生',
+          '/dailyQuestion/webpack/configureWebpack和chainWebpack',
         ]
       },
+      {
+        title: 'npm-package',
+        children: [
+          '/dailyQuestion/npm-package/concurrently',
+        ]
+      }
     ],
   },
   {
@@ -191,7 +221,6 @@ let sidebar = [
           '/notes/algorithm/切换字母大小写',
           '/notes/algorithm/为何0.1+0.2！=0.3',
           // 以下为自己刷到的题
-          '/notes/algorithm/找出单向链表中倒数 k个节点返回该节点的值',
           '/notes/algorithm/交替合并字符串',
           '/notes/algorithm/js的几种常用排序方法',
         ],
@@ -246,6 +275,14 @@ let sidebar = [
     initialOpenGroupIndex: -1 // 可选的, 默认值是 0
   },
   {
+    title: '指引',
+    children: [
+      '/operationsGuide/新入职电脑初始配置',
+    ],
+    sidebarDepth: 1,    // 可选的, 默认值是 1
+    initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+  },
+  {
     title: '图表可视化',
     sidebarDepth: 1, 
     initialOpenGroupIndex: -1,
@@ -288,27 +325,8 @@ let sidebar = [
       '/git/init',
       '/git/config',
       '/git/basic',
-      '/git/branch',
+      '/git/branch'
     ],
   },
 ]
 module.exports = sidebar;
-
-// {
-//   title: '夯实基础',   // 必要的
-//   path: '/notes/intro',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-//   // collapsable: false, // 可选的, 默认值是 true,
-//   sidebarDepth: 1,    // 可选的, 默认值是 1
-//   initialOpenGroupIndex: -1, // 可选的, 默认值是 0
-//   children: [
-//     '/notes/basic/queryCompare',
-//     '/notes/basic/unitCompare',
-//   ]
-// },
-// {
-//   title: '广度',
-//   children: [
-//     '/notes/breadth/jsBridge',
-//   ],
-//   initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-// },

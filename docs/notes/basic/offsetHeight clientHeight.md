@@ -28,7 +28,7 @@
 3. 实际高度 scrollHeight scrollWidth   
 <img :src="$withBase('/assets/notes-images/basic/scroll.png')" alt="tcp" width="500">
 
-4. 顶部距离最近父元素顶部的距离 offsetTop     
+4. 滚动出去被遮住的高度 scrollTop     
 <img :src="$withBase('/assets/notes-images/basic/scrollTop.png')" alt="tcp" width="500">
 
 5. 顶部距离最近父元素顶部的距离 offsetTop   
