@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        transform-style: preserve-3d;
+        width: 200px;
+        height: 200px;
+    }
+    .box {
+        width: 50px;
+        height: 50px;
+        offset-position: 50% 50%;
+        offset-distance: 100%;
+        offset-rotate: 0deg;
+    }
+    #redBox {
+        background-color: red;
+        offset-path: ray(45deg closest-side);
+    }
+    #blueBox {
+        background-color: blue;
+        offset-path: ray(180deg closest-side);
+    }
+    </style>
+</head>
+<body>
+    <div class="box" id="redBox"></div>
+    <div class="box" id="blueBox"></div>
+</body>
+</html>
