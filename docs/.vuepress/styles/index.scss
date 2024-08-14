@@ -1,0 +1,15 @@
+@function makelongrightshadow($color) {
+    $val: 0px 0px $color;
+
+    @for $i from 1 through 50 {
+        $color: fade-out(desaturate($color, 1%), .02);
+        $val: #{$val}, #{$i}px #{$i}px #{$color};
+    }
+
+    @return $val;
+}
+
+.s-shadow-long {
+    text-shadow: makeLongShadow(hsl(14, 100%, 30%));
+}
+

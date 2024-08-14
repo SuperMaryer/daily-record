@@ -25,5 +25,8 @@ module.exports = {
         //     hideText: '等你回来哦~',
         //     recoverTime: 2000,
         // }]
+    ],
+    head: [
+        ['link', { rel: 'stylesheet', href: '/styles/index.css' }]
     ]
 }
