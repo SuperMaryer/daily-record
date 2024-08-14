@@ -11,7 +11,7 @@
 - 支持新方法 DELETE PUT 等，可用于Restful API
 - 缓存策略，catch-control  E-tag等
 - 支持长连接 Connection keep-alive, 一次TCP连接多次请求
-- 断点续传，状态码206
+- 断点续传，状态码206                     
 
 ### HTTP 2.0
 需要普及推广，优化使用

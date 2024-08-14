@@ -1,6 +1,23 @@
 
 # Object.create和{}区别
 
+### 创建对象的方法
+1. 字面量
+    var obj = {name: 'ffhou'}
+    var obj1 = new Object({name: 'ffhou'})
+2. 构造函数
+    var M = function(name) {
+        this.name = name
+    }
+    var obj2 = new M('ffhou')
+3. Object.create
+    var p = {name: 'ffhou'}
+    var obj3 = Object.create(p)
+
+
+<img :src="$withBase('/assets/notes-images/codes/object-create-type.png')" alt="object" width="300">
+<img :src="$withBase('/assets/notes-images/codes/object-create-type1.png')" alt="object" width="700">
+
 ### Object.create介绍
 #### 作用
 Object.create() 方法用于创建一个新对象，使用现有的对象来作为新创建对象的原型（prototype）。
@@ -13,9 +30,27 @@ Object.create(proto, propertiesObject)
 - proto: 新创建对象的原型对象
 - propertiesObject: 可选。该参数是一个属性描述对象，它所描述的对象属性，会添加到实例对象，作为该对象自身的属性。（这些属性描述符的结构与Object.defineProperties()的第二个参数一样）
 
+属性描述对象：
+    {
+        value: 123,
+        writable: false,
+        enumerable: true,
+        configurable: false,
+        get: undefined,
+        set: undefined
+    }
+
 #### 返回值
 - 返回一个新对象，带着指定的原型对象及其属性
 
+#### 实现
+``` js
+var Object.myCreate =  function (o) {
+    var F = function () {};
+    F.prototype = o;
+    return new F();
+}
+```
 
 ### 区别：原型指向不同
 - {}: 创建空对象，原型指向 Object.prototype
