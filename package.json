@@ -7,13 +7,10 @@
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
-
     "test1": "echo Hello World!",
     "test2": "echo Error: no test specified&&echo Hello World!",
     "test3": "npm run watch-js&&npm run watch-less&&echo Hello World!",
     "start": "npm run docs:dev&&npm run docs:build",
-
-    
     "test1-con": "concurrently \"echo Hello World!\"",
     "test2-con": "concurrently \"echo Error: no test specified\" \"echo Hello World!\"",
     "test3-con": "concurrently \"npm run watch-js\" \"npm run watch-less\" \"echo Hello World!\"",
