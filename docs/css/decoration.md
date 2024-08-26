@@ -293,10 +293,10 @@ text-decoration
     background-size: 100% 3px, 0 3px;
     background-position: 100% 100%, 0 100%;
     transition: 1s all;
-    color: #0CC;
+    color: #0cc;
     &:hover {
         background-size: 0 3px, 100% 3px;
-        color: #0CC;
+        color: #0cc;
     }
 }
 ```
