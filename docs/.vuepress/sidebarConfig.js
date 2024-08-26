@@ -336,14 +336,14 @@ let sidebar = [
       '/css/ellipsis',
       '/css/emphasis',
       '/css/gradient',
-      '/css/animation',
+      // '/css/animation',
     ],
   },
-  {
-    title: 'AI',
-    children: [
-      '/css/ai-server',
-    ],
-  },
+  // {
+  //   title: 'AI',
+  //   children: [
+  //     '/css/ai-server',
+  //   ],
+  // },
 ]
 module.exports = sidebar;
