@@ -91,7 +91,7 @@ module.exports = {
         config.module
             .rule('vue')
             .exclude.clear()
-            .add(/node_modules(\/|\\)(?!@?sutpc)/)
+            .add(/node_modules(\/|\\)(?!@?ffhou)/)
             .end();
 
         config.module
@@ -109,12 +109,12 @@ module.exports = {
             .rule('less')
             .oneOf('vue')
             .use('theme-less')
-            .loader('@sutpc/theme-less-loader')
+            .loader('@ffhou/theme-less-loader')
             .end()
             .end()
             .oneOf('normal')
             .use('theme-less')
-            .loader('@sutpc/theme-less-loader')
+            .loader('@ffhou/theme-less-loader')
             .end();
 
         config.plugin('define').tap((args) => {
