@@ -1,7 +1,7 @@
 ### 文字阴影
 text-shadow: 给文本设置阴影
 
-text-shadow: h-offset v-offset blur color;
+text-shadow: h-offset y-offset blur color;
 
 - h-offset：水平偏移量，正右负左
 - y-offset：垂直偏移量，正上负下
@@ -28,7 +28,7 @@ text-shadow: h-offset v-offset blur color;
         text-align: center;
     }
     .text-shadow-1-1 {
-        text-shadow: 5px 5px 5px #999;
+        text-shadow: 5px 5px 5px #9990;
     }
     .text-shadow-1-2 {
         text-shadow: 5px -5px 5px #999;
@@ -122,19 +122,6 @@ text-shadow: h-offset v-offset blur color;
 </body>
 </html>
 
-::: details 点击查看代码
-``` html
-    <div class="shadow-embed">normal shadow</div>
-```
-``` css
-    .shadow-normal {
-        text-shadow: 5px  5px 3px #999;
-    }
-    
-```
-:::
-
-
 #### 长阴影-常规实现
 <div class="shadow shadow-long">long shadow</div>
 
@@ -174,6 +161,7 @@ text-shadow: h-offset v-offset blur color;
 }
 ```
 
+- fade-out: 提升颜色的透明度，取值在 0-1 之间
 - desaturate: 调低一个颜色的饱和度后产生一个新的色值
 - hsl(hue, saturation, lightness) 通过色相（hue）、饱和度(saturation)和亮度（lightness）的值创建一个颜色。
 :::
@@ -271,3 +259,9 @@ text-shadow: h-offset v-offset blur color;
             0 0 200px #0ebeff
     }
 </style>
+
+
+#### 阴影工具
+- [在线调试](https://tool.ip138.com/csstextshadow/)
+- [Shaddows Brumm](https://shadows.brumm.af/)
+- [Box Shadow](https://box-shadow.art/)
