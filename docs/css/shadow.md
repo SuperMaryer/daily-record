@@ -28,7 +28,7 @@ text-shadow: h-offset y-offset blur color;
         text-align: center;
     }
     .text-shadow-1-1 {
-        text-shadow: 5px 5px 5px #9990;
+        text-shadow: 5px 5px 5px #999;
     }
     .text-shadow-1-2 {
         text-shadow: 5px -5px 5px #999;

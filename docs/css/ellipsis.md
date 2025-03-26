@@ -20,6 +20,16 @@
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
+        margin: 20px auto;
+        -webkit-box-orient: vertical;
+    }
+    .box3 {
+        width: 300px;
+        margin: 20px auto;
+        color: green;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
 </style>
@@ -28,7 +38,10 @@
         单行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
     </div>
     <div class="box2">
-        多行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
+        多行-两行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
+    </div>
+    <div class="box3">
+        多行-三行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
     </div>
 </body>
 </html>
@@ -40,7 +53,10 @@
     单行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
 </div>
 <div class="box2">
-    多行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
+    多行-两行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
+</div>
+<div class="box3">
+    多行-三行：Everyone will have a dream in the deepest part of your heart. Those dreams will become the driving force for your progress. It will support the body you are about to give up and start again. 
 </div>
 ```
 ``` css
@@ -60,6 +76,15 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+}
+.box3 {
+    width: 300px;
+    margin: 20px auto;
+    color: green;
+    overflow: hidden;
+    display: -webkit-box; // 弹性伸缩盒子
+    -webkit-line-clamp: 3; // 行数
+    -webkit-box-orient: vertical; // 子元素的排列方式
 }
 ```
 :::

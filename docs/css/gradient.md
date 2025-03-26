@@ -60,7 +60,8 @@
 ##### 示例2
 <html lang="en">
 <style>
-    /* 使用background, 需要注意要先设置background 后设置background-clip，否则background会将background-clip重新设置为默认值border-box */
+    /* 使用background, 需要注意要先设置background 后设置background-clip，
+    否则background会将background-clip重新设置为默认值border-box */
     /* 先clip 后background */
     .text-2-1 {
         color: transparent;

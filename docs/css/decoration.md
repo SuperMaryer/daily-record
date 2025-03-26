@@ -4,7 +4,7 @@ text-decoration
 - text-decoration-color  颜色
 - text-decoration-style  solid实线、double双实线、dashed虚线、dotted点线、wavy波浪线
 - text-decoration-thickness 粗细
-- text-decoration-offset 偏移量
+- text-underline-offset 偏移量
 
 #### 静态效果
 
@@ -73,7 +73,7 @@ text-decoration
         text-decoration-line: underline overline;
         text-decoration-color: skyblue;
         text-decoration-style: double;
-        text-decoration-offset: 6px;
+        text-underline-offset: 20px;
     }
     .text-offset-3 {
         text-decoration-line: overline;
@@ -84,7 +84,7 @@ text-decoration
         text-decoration-line: overline;
         text-decoration-color: skyblue;
         text-decoration-style: wavy;
-        text-decoration-offset: 20px;
+        text-underline-offset: 20px;
     }
 </style>
 <body>
@@ -101,16 +101,17 @@ text-decoration
         <div class="flex-item">
             <div class="text-line-2">overline</div>
             <p>text-decoration-line: overline;</p>
-            <p>text-decoration-color: skyblue;</p>
+            <p>text-decoration-color: pink;</p>
         </div>
         <div class="flex-item">
             <div class="text-line-3">line-through</div>
             <p>text-decoration-line: line-through;</p>
-            <p>text-decoration-color: #a0aaff;</p>
+            <p>text-decoration-color: skyblue;</p>
         </div>
         <div class="flex-item">
             <div class="text-line-1-2">underline overline</div>
             <p>text-decoration-line: underline overline;</p>
+            <p>text-decoration-color: #a0aaff;</p>
         </div>
         <div class="flex-item">
             <div class="text-line-1-2-3">underline overline line-through</div>
@@ -119,7 +120,7 @@ text-decoration
     </div>
     <div class="flex-wrap">
         <div class="flex-item">
-            <div class="text-style-1">solid</div>
+            <div class="text-style text-style-1">solid</div>
             <p>text-decoration-line: underline;</p>
             <p>text-decoration-color: pink;</p>
             <p>text-decoration-style: solid;</p>
@@ -157,11 +158,11 @@ text-decoration
             <p>text-decoration-style: double;</p>
         </div>
         <div class="flex-item">
-            <div class="text-offset-2">double-offset</div>
+            <div class="text-offset-2">underline-offset</div>
             <p>text-decoration-line: underline overline;</p>
             <p>text-decoration-color: skyblue;</p>
-            <p>text-decoration-style: double;</p>
-            <p>text-decoration-offset: 6px;</p>
+            <p>text-decoration-style: underline;</p>
+            <p>text-underline-offset: 20px;</p>
         </div>
         <div class="flex-item">
             <div class="text-offset-3">wavy</div>
@@ -174,7 +175,7 @@ text-decoration
             <p>text-decoration-line: underline;</p>
             <p>text-decoration-color: skyblue;</p>
             <p>text-decoration-style: wavy;</p>
-            <p>text-decoration-offset: 20px;</p>
+            <p>text-underline-offset: 20px;</p>
         </div>
     </div>
 </body>

@@ -69,13 +69,13 @@ text-emphasis: 文字上/下方添加不同的强调装饰, 标记会除去空�
         text-emphasis: circle blue;
         writing-mode: vertical-lr;
         text-orientation: upright;
-        text-emphasis-position: under;
+        text-emphasis-position: over;
     }
     .text-position-7 {
         text-emphasis: circle blue;
         writing-mode: vertical-lr;
         text-orientation: upright;
-        text-emphasis-position: under left;
+        text-emphasis-position: over left;
     }
     .text-position-8 {
         text-emphasis: circle blue;
@@ -100,7 +100,7 @@ text-emphasis: 文字上/下方添加不同的强调装饰, 标记会除去空�
         </div>
         <div class="flex-item">
             <div class="text-emphasis-3">emphasis</div>
-            <p>text-emphasis: '' blue;</p>
+            <p>text-emphasis: '×' blue;</p>
         </div>
         <div class="flex-item">
             <div class="text-emphasis-4">victory</div>
@@ -109,7 +109,7 @@ text-emphasis: 文字上/下方添加不同的强调装饰, 标记会除去空�
     </div>
     <div class="flex-wrap flex-wrap-1">
         <div class="flex-item">
-            <div class="text-position-0">over</div>
+            <div class="text-position-0">default</div>
             <p>text-emphasis: '🌞';</p>
         </div>
         <div class="flex-item">
@@ -143,7 +143,7 @@ text-emphasis: 文字上/下方添加不同的强调装饰, 标记会除去空�
         <div class="flex-item">
             <div class="text-position-6">ABCD</div>
             <p>text-emphasis: circle blue;</p>
-            <p>text-emphasis-position: under;</p>
+            <p>text-emphasis-position: over;</p>
             <p>writing-mode: vertical-lr;</p>
             <p>text-orientation: upright;</p>
         </div>
