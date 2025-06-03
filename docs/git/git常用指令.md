@@ -90,6 +90,12 @@
 
 
 - git reset --hard origin/master 重置本地代码
+
+
+### pnpm 
+装包优先拉去本地已有，提升效率：pnpm i --prefer-offline
     
 
-
+跳过 ESLint 校验直接提交代码
+git commit -m "您的提交信息" --no-verify
+git commit -m "您的提交信息" -n

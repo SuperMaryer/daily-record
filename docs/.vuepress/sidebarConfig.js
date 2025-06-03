@@ -329,7 +329,7 @@ let sidebar = [
 //     ],
 //   },
   {
-    title: 'CSS文字与动效',
+    title: 'CSS文字效果',
     children: [
       '/css/shadow',
       '/css/decoration',
